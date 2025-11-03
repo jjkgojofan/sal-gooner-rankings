@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gooner Rankings</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      font-family: 'Trebuchet MS', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #58a6ff;
+      margin-top: 40px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
+      background: #161b22;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    ol {
+      counter-reset: item;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ol li {
+      counter-increment: item;
+      background: #1f2937;
+      margin: 6px 0;
+      padding: 10px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    ol li::before {
+      content: counter(item) ". ";
+      font-weight: bold;
+      color: #58a6ff;
+      margin-right: 8px;
+    }
+
+    ol li:hover {
+      background: #374151;
+      transform: scale(1.01);
+    }
+
+    .retired {
+      color: #a1a1aa;
+    }
+
+    .rip {
+      color: #ff5555;
+    }
+
+    .honor {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    .hall {
+      margin-top: 40px;
+      border-top: 2px solid #444;
+      padding-top: 20px;
+    }
+
+    .hall ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .hall li {
+      background-color: #1f2937;
+      margin: 8px auto;
+      padding: 10px;
+      border-radius: 8px;
+      width: 250px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hall li:hover {
+      background-color: #2c3545;
+      transform: scale(1.05);
+    }
+
+    .hall li.active {
+      background-color: #ffd700;
+      color: #000;
+      font-weight: bold;
+    }
+
+    #player-info {
+      text-align: center;
+      margin-top: 15px;
+      font-style: italic;
+      color: #a1a1aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gooner Rankings</h1>
+    <ol>
+      <li>Jyoji</li>
+      <li>Sota <span class="retired">(retired pro)</span></li>
+      <li>Kota</li>
+      <li>Yusei</li>
+      <li>Okada Yuuki <span class="retired">(retired pro)</span></li>
+      <li>Sakurai</li>
+      <li>Takeshi</li>
+      <li>Rui</li>
+      <li>Degidio</li>
+      <li>Luka</li>
+      <li>Ueda Yuuki <span class="retired">(retired pro)</span></li>
+      <li>Winn</li>
+      <li>Ms. Adkins</li>
+      <li>Hamabe</li>
+      <li>Chopped chin</li>
+      <li>Mori Shyun <span class="retired">(retired rapist)</span></li>
+      <li>Chamita</li>
+      <li>Nudy guy</li>
+      <li>Go Kaya</li>
+      <li>Tamaki <span class="retired">(retired pro)</span></li>
+      <li>Junto</li>
+      <li>Yamato Kasuga <span class="retired">(retired rapist)</span></li>
+      <li>Anayon</li>
+      <li>Angelo</li>
+      <li>Denn</li>
+      <li>Naruki</li>
+      <li>Aoi <span class="retired">(retired pro)</span></li>
+      <li>Woojin</li>
+      <li>Kentaro</li>
+      <li>Koga Yamamoto</li>
+      <li>Shinmura Yuuki</li>
+      <li>Ramsey <span class="retired">(retired pro)</span></li>
+      <li>Niche sensei</li>
+      <li>Keita</li>
+      <li>Jun Honna</li>
+      <li>xX_47_Xx</li>
+      <li>Tharana (Ranjeet)</li>
+      <li>Poopjeet</li>
+      <li>Pajeet</li>
+      <li>Yuma <span class="retired">(retired pro)</span></li>
+      <li>Sogo</li>
+      <li>Shreia</li>
+      <li>Jxhn</li>
+      <li>Sumo</li>
+      <li>Kazuki <span class="retired">(retired pro)</span></li>
+      <li>Julien Taro</li>
+      <li>Femboy alert!! (Autistic ver of Julien)</li>
+      <li>Kai Wuest</li>
+      <li>Detchi</li>
+      <li>Shaun</li>
+      <li>Mr.T <span class="rip">R.I.P. (retired pro)</span></li>
+      <li>Mr.Beckham <span class="rip">R.I.P. (retired pro)</span></li>
+      <li>Todd Tilma <span class="rip">R.I.P. (retired pro)</span></li>
+    </ol>
+
+    <div class="honor">🏅 Goon of Honor goes to <strong>Todd Tilma</strong></div>
+
+    <div class="hall">
+      <h2>Hall of Fame</h2>
+      <ul id="hall-list">
+        <li>Tilma Todd</li>
+        <li>Kazuki</li>
+        <li>Sota</li>
+        <li>Jyoji</li>
+        <li>Okada Yuuki</li>
+        <li>Ramsey</li>
+        <li>Yamato Kasuga</li>
+        <li>Yuma Yoshida</li>
+        <li>Winn</li>
+        <li>Luka (AnimePro)</li>
+      </ul>
+      <div id="player-info">Click a name to view more info...</div>
+    </div>
+  </div>
+
+  <script>
+    const listItems = document.querySelectorAll("#hall-list li");
+    const info = document.getElementById("player-info");
+
+    listItems.forEach(item => {
+      item.addEventListener("click", () => {
+        listItems.forEach(i => i.classList.remove("active"));
+        item.classList.add("active");
+        const playerName = item.textContent;
+        info.textContent = `You selected: ${playerName}`;
+      });
+    });
+  </script>
+</body>
+</html>
